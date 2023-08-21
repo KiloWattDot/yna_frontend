@@ -69,15 +69,15 @@ const ContactForm = () => {
                   <form>
                     <FormGroup>
                       
-                      <input type="text" id="name" name="name"placeholder="Name:..."  />
+                      <input type="text" id="name" name="name"placeholder="NAME:"  />
                     </FormGroup>
                     <FormGroup>
                       
-                      <input type="email" id="email" name="email" placeholder="Email:..."  />
+                      <input type="email" id="email" name="email" placeholder="EMAIL:"  />
                     </FormGroup>
                     <FormGroup>
                       
-                      <textarea id="message" name="message" rows="20" placeholder="Type message here:..."  />
+                      <textarea id="message" name="message" rows="20" placeholder="MESSAGE:"  />
                     </FormGroup>
                     <SubmitButton type="submit">Submit</SubmitButton>
                   </form>
