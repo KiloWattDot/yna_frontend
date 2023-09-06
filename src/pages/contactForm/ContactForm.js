@@ -10,80 +10,92 @@ const ContactForm = () => {
     <>
       <NavBar />
       <ContactFormStyle>
-            <FormWrapper>
-              <ContactContainer>
-                <ContactInfoContainer>
-                  <ContactInfoHeader>CONTACT US</ContactInfoHeader>
+        <FormWrapper>
+          <ContactContainer>
+            <ContactInfoContainer>
+              <ContactInfoHeader>CONTACT US</ContactInfoHeader>
 
-                  <LogoStyle>
-                    <div>
-                      <img src={ynaLogoCircle} alt="YNA_logo_in_a_circle" />
-                    </div>
+              <LogoStyle>
+                <div>
+                  <img src={ynaLogoCircle} alt="YNA_logo_in_a_circle" />
+                </div>
 
-                  </LogoStyle>
+              </LogoStyle>
 
 
-                  <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="0.5" x2="223" y2="0.5" stroke="white" />
-                  </svg>
-                  <ContactInfoList>
-                    <SocialMediaContainer>
-                      <li>
-                        <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
-                          <FontAwesomeIcon icon={faGithub} />
-                        </a>
-                        GitHub
-                      </li>
+              <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="223" y2="0.5" stroke="white" />
+              </svg>
+              <ContactInfoList>
+                <SocialMediaContainer>
+                  <li>
+                    <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer" className="socialMedia_text">
+                      GitHub
+                    </a>
+                    
+                  </li>
 
-                      <li>
-                        <a href="https://www.linkedin.com/company/yna-consult-group/" target="_blank" rel="noreferrer">
-                          <FontAwesomeIcon icon={faLinkedin} />
-                        </a>
-                        Linkedin
-                      </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/yna-consult-group/" target="_blank" rel="noreferrer" >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a href="https://www.linkedin.com/company/yna-consult-group/" target="_blank" rel="noreferrer" className="socialMedia_text">
+                      Linkedin
+                    </a>
 
-                      <li>
-                        <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </a>
-                        Twitter
-                      </li>
+                  </li>
 
-                      <li>
-                        <a href="https://www.instagram.com/yna.squad/" target="_blank" rel="noreferrer">
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        Instagram
-                      </li>
-                    </SocialMediaContainer>
-                  </ContactInfoList>
+                  <li>
+                    <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer" className="socialMedia_text">
+                      Twitter
+                    </a>
+                    
+                  </li>
 
-                  <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="0.5" x2="223" y2="0.5" stroke="white" />
-                  </svg>
+                  <li>
+                    <a href="https://www.instagram.com/yna.squad/" target="_blank" rel="noreferrer">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a  href="https://www.instagram.com/yna.squad/" target="_blank" rel="noreferrer" className="socialMedia_text">
+                      Instagram
+                    </a>
+                    
+                  </li>
+                </SocialMediaContainer>
+              </ContactInfoList>
 
-                  <p>Get in touch with the @yna_squad today!</p>
-                </ContactInfoContainer>
+              <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="223" y2="0.5" stroke="white" />
+              </svg>
 
-                <FormContainer>
-                  <form>
-                    <FormGroup>
-                      <label htmlFor="name">Name:</label>
-                      <input type="text" id="name" name="name"placeholder="Name:..."  />
-                    </FormGroup>
-                    <FormGroup>
-                      <label htmlFor="email">Email:</label>
-                      <input type="email" id="email" name="email" placeholder="Email:..."  />
-                    </FormGroup>
-                    <FormGroup>
-                      <label htmlFor="message">Message:</label>
-                      <textarea id="message" name="message" rows="20" placeholder="Type message here:..."  />
-                    </FormGroup>
-                    <SubmitButton type="submit">Submit</SubmitButton>
-                  </form>
-                </FormContainer>
-              </ContactContainer>
-            </FormWrapper>
+              <p>Get in touch with the @yna_squad today!</p>
+            </ContactInfoContainer>
+
+            <FormContainer>
+              <form>
+                <FormGroup>
+                  <label htmlFor="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="NAME" />
+                </FormGroup>
+                <FormGroup>
+                  <label htmlFor="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="EMAIL" />
+                </FormGroup>
+                <FormGroup>
+                  <label htmlFor="message">Message:</label>
+                  <textarea id="message" name="message" rows="20" placeholder="MESSAGE:" />
+                </FormGroup>
+                <SubmitButton type="submit">Submit</SubmitButton>
+              </form>
+            </FormContainer>
+          </ContactContainer>
+        </FormWrapper>
       </ContactFormStyle>
     </>
   );

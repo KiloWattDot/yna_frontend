@@ -91,7 +91,12 @@ export const ContactContainer = styled.div`
   p { 
     color: #FFC100;
     text-align: center
+
+  
+
   }
+
+
 
   @media (max-width: 700px) {
     width: 400px;
@@ -152,17 +157,32 @@ export const ContactInfoList = styled.ul`
 `;
 export const SocialMediaContainer = styled.div`
 
-  svg {
-    font-size: 24px;
-    margin-right: 30px !important;
-    cursor: pointer;
-    transition: color 0.3s;
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
     color: #FFC100;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
 
     &:hover {
-      color: #FFFFFF; /* GitHub brand color */
+      color: #FFC100; /* Yellow color on hover */
     }
   }
+
+  svg {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .socialMedia_text {
+    color: #FFFFFF;
+  }
+}
 `;
 
 
@@ -199,7 +219,7 @@ export const FormGroup = styled.div`
     ::placeholder { /* Added placeholder styling */
       color: #ccc;
       font-style: Poppins;
-      font-size: 15px;
+      font-size: 20px;
   }
 
   color: white; /* Set textarea text color to white */
